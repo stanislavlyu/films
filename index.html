@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container">
+    <h3 class="search">Search</h3>
+    <form class="search-movie-form" id="search-movie-form">
 
+        <div class="input-field">
+            <label class="label-title" for="title">Title:</label>
+            <input placeholder="...please, enter something" id="title" type="text">
+        </div>
+        <div class="input-field">
+            <label class="label-type" for="type">Type:</label>
+            <select name="type" id="type">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+            </select>
+        </div>
+        <input class="submit-form" type="submit" value="Search">
+    </form>
+    <div class="result" id="result"></div>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
